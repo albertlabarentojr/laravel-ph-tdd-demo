@@ -1,0 +1,36 @@
+{
+    "name": "anl/laravel-ph-tdd-demo",
+    "description": "Laravel PH TDD Demo",
+    "keywords": [
+      "mail",
+      "marketing"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+      "php": ">=7.2",
+        "illuminate/container": "^5.9@dev",
+        "mailgun/mailgun-php": "^3.0@dev",
+        "kriswallsmith/buzz": "dev-master",
+        "nyholm/psr7": "^1.0@dev",
+        "drewm/mailchimp-api": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.4",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+      "psr-4": {
+        "LaraMarketing\\": "src/"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "Tests\\LaraMarketing\\": "tests/"
+      }
+    },
+    "minimum-stability": "dev",
+    "config": {
+      "optimize-autoloader": true
+    }
+}
